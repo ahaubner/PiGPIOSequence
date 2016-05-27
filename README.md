@@ -20,6 +20,7 @@ However, it is in a somewhat usable condition ;)
   - clang 3.8
   - g++ 6.1.1
 - QMake
+
 ## Libraries
 - IPFind (NetServer and Designer only)
 - cereal
