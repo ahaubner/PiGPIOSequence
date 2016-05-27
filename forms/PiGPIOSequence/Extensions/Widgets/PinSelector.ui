@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright (C) 2016 Anton Haubner <anton.haubner@outlook.de>
+
+   This file is part of the PiGPIOSequenceWidgets library.
+
+   PiGPIOSequenceWidgets is free software: you can redistribute it and/or modify
+   it under the terms of the GNU Affero General Public License as published by
+   the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+
+   PiGPIOSequenceWidgets is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU Affero General Public License for more details.
+
+   You should have received a copy of the GNU Affero General Public License
+   along with PiGPIOSequenceWidgets.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<ui version="4.0">
+ <class>PiGPIOSequence::Extensions::Widgets::PinSelector</class>
+ <widget class="QWidget" name="PiGPIOSequence::Extensions::Widgets::PinSelector">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>259</width>
+    <height>658</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string>Pins</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Revision 2</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>0</number>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QCheckBox" name="V3_3_N0">
+           <property name="styleSheet">
+            <string notr="true">background-color: orange;</string>
+           </property>
+           <property name="text">
+            <string>3.3V</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QCheckBox" name="V5_N0">
+           <property name="styleSheet">
+            <string notr="true">background-color: red;</string>
+           </property>
+           <property name="text">
+            <string>5V</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QCheckBox" name="GPIO2">
+           <property name="styleSheet">
+            <string notr="true">background-color: magenta;</string>
+           </property>
+           <property name="text">
+            <string>GPIO2</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QCheckBox" name="V5_N1">
+           <property name="styleSheet">
+            <string notr="true">background-color: red;</string>
+           </property>
+           <property name="text">
+            <string>5V</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QCheckBox" name="GPIO3">
+           <property name="styleSheet">
+            <string notr="true">background-color: magenta;</string>
+           </property>
+           <property name="text">
+            <string>GPIO3</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QCheckBox" name="GROUND_N0">
+           <property name="styleSheet">
+            <string notr="true">background-color: black;
+color: white;</string>
+           </property>
+           <property name="text">
+            <string>Ground</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QCheckBox" name="GPIO4">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(85, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>GPIO4</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QCheckBox" name="GPIO14">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(170, 85, 255);</string>
+           </property>
+           <property name="text">
+            <string>GPIO14</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QCheckBox" name="GROUND_N1">
+           <property name="styleSheet">
+            <string notr="true">background-color: black;
+color: white;</string>
+           </property>
+           <property name="text">
+            <string>Ground</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QCheckBox" name="GPIO15">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(170, 85, 255);</string>
+           </property>
+           <property name="text">
+            <string>GPIO15</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QCheckBox" name="GPIO17">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(85, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>GPIO17</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QCheckBox" name="GPIO18">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(85, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>GPIO18</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QCheckBox" name="GPIO27">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(85, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>GPIO27</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QCheckBox" name="GROUND_N2">
+           <property name="styleSheet">
+            <string notr="true">background-color: black;
+color: white;</string>
+           </property>
+           <property name="text">
+            <string>Ground</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QCheckBox" name="GPIO22">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(85, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>GPIO22</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QCheckBox" name="GPIO23">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(85, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>GPIO23</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <widget class="QCheckBox" name="V3_3_N1">
+           <property name="styleSheet">
+            <string notr="true">background-color: orange;</string>
+           </property>
+           <property name="text">
+            <string>3.3V</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="1">
+          <widget class="QCheckBox" name="GPIO24">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(85, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>GPIO24</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <widget class="QCheckBox" name="GPIO10">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 170, 255);</string>
+           </property>
+           <property name="text">
+            <string>GPIO10</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="1">
+          <widget class="QCheckBox" name="GROUND_N3">
+           <property name="styleSheet">
+            <string notr="true">background-color: black;
+color: white;</string>
+           </property>
+           <property name="text">
+            <string>Ground</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="0">
+          <widget class="QCheckBox" name="GPIO9">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 170, 255);</string>
+           </property>
+           <property name="text">
+            <string>GPIO9</string>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="1">
+          <widget class="QCheckBox" name="GPIO25">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(85, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>GPIO25</string>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="0">
+          <widget class="QCheckBox" name="GPIO11">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 170, 255);</string>
+           </property>
+           <property name="text">
+            <string>GPIO11</string>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="1">
+          <widget class="QCheckBox" name="GPIO8">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 170, 255);</string>
+           </property>
+           <property name="text">
+            <string>GPIO8</string>
+           </property>
+          </widget>
+         </item>
+         <item row="12" column="0">
+          <widget class="QCheckBox" name="GROUND_N4">
+           <property name="styleSheet">
+            <string notr="true">background-color: black;
+color: white;</string>
+           </property>
+           <property name="text">
+            <string>Ground</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="12" column="1">
+          <widget class="QCheckBox" name="GPIO7">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 170, 255);</string>
+           </property>
+           <property name="text">
+            <string>GPIO7</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Model B+</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_2">
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>0</number>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item row="5" column="0">
+          <widget class="QCheckBox" name="GPIO26">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(85, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>GPIO26</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QCheckBox" name="GPIO20">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(85, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>GPIO20</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QCheckBox" name="GROUND_N7">
+           <property name="styleSheet">
+            <string notr="true">background-color: black;
+color: white;</string>
+           </property>
+           <property name="text">
+            <string>Ground</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QCheckBox" name="GPIO5">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(85, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>GPIO5</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QCheckBox" name="GROUND_N5">
+           <property name="styleSheet">
+            <string notr="true">background-color: black;
+color: white;</string>
+           </property>
+           <property name="text">
+            <string>Ground</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QCheckBox" name="GPIO6">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(85, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>GPIO6</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QCheckBox" name="GPIO12">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(85, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>GPIO12</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QCheckBox" name="ID_SD">
+           <property name="styleSheet">
+            <string notr="true">background-color: yellow;</string>
+           </property>
+           <property name="text">
+            <string>ID_SD</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QCheckBox" name="ID_SC">
+           <property name="styleSheet">
+            <string notr="true">background-color: yellow;</string>
+           </property>
+           <property name="text">
+            <string>ID_SC</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QCheckBox" name="GPIO13">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(85, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>GPIO13</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QCheckBox" name="GROUND_N6">
+           <property name="styleSheet">
+            <string notr="true">background-color: black;
+color: white;</string>
+           </property>
+           <property name="text">
+            <string>Ground</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QCheckBox" name="GPIO19">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(85, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>GPIO19</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QCheckBox" name="GPIO16">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(85, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>GPIO16</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QCheckBox" name="GPIO21">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(85, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>GPIO21</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

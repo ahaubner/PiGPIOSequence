@@ -1,0 +1,15 @@
+bin/
+*/bin/
+lib/
+*/lib/
+libs/
+*.user.*
+*.user
+*.o
+*.so
+*.autosave
+*~
+*.dll
+Makefile
+ui_*
+moc_*
