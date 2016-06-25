@@ -46,6 +46,14 @@ git clone https://github.com/ahaubner/IPFind.git
 git clone https://github.com/ahaubner/PiGPIOSequence.git
 ```
 
+Build IPFind:
+```sh
+cd IPFind
+qmake
+make
+cd ..
+```
+
 Symlink libs (if you don't want to install them):
 ```sh
 mkdir IPFind/libs
